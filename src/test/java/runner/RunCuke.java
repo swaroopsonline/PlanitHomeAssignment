@@ -14,7 +14,8 @@ import com.cucumber.listener.ExtentCucumberFormatter;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-
+//This Runner could be modified to test a particular feature or to run all the features.
+//Kindly note that the tags = {""} are left blank, so as to run all the feature files, having all the Test Cases
 @CucumberOptions(features = { "src/test/resources/features/" },
 		glue = { "steps" },
 		tags = {""}, monochrome = true,
@@ -23,8 +24,11 @@ import io.cucumber.testng.CucumberOptions;
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }
 		)
 
+// AbstractTestNGCucumberTests is used to run each Cucumber scenario as a separate Test.
 public class RunCuke extends AbstractTestNGCucumberTests{
 	
+	//Here we've tried to generate a separate Extent-Report. However the Extent reporting has failed due
+	//to some issues. This is a 'Work in Progress'. So kindly omit the same.
 	@BeforeClass
     public static void setup() {
         // Initiates the extent report and generates the output in the output/Run_<unique timestamp>/report.html file by default.

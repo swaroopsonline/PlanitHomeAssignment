@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+/*This Class acts as a repository of the ShopPage WebElement locators*/
 public class ShopPageLocators {
 	
 	@FindBy(how=How.XPATH, using ="//*[@id=\"product-6\"]/div/p/a")
