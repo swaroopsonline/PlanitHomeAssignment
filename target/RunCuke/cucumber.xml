@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="109.55087">
+<testcase classname="Acceptance testing to validate the errors on the Contact Page" name="Validate Errors on the Contact page" time="56.333052">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;forename-err&quot;]&quot;}&#10;  (Session info: chrome=85.0.4183.121)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'&#10;System info: host: 'SMITAPC', ip: '192.168.1.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\Smita\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53457}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 1ed09ae60abe372e2106253f72f4cb29&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;forename-err&quot;]}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:361)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy20.isSelected(Unknown Source)&#13;&#10;&#9;at pages.actions.ContactPageActions.verifyErrorMessage(ContactPageActions.java:50)&#13;&#10;&#9;at steps.TestCase1Steps.the_error_message_should_be_gone(TestCase1Steps.java:77)&#13;&#10;&#9;at ✽.the error message should be gone(file:src/test/resources/features/TestCase1.feature:13)&#13;&#10;"><![CDATA[Given I am on the HomePage the Jupiter Planit Testing "https://jupiter.cloud.planittesting.com/#/".passed
+And click on Contact link...................................................passed
+And on the resulting page I click on the Submit button......................passed
+Then I should be able to validate the error message.........................passed
+When I populate the mandatory fields........................................passed
+Then the error message should be gone.......................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="forename-err"]"}
+  (Session info: chrome=85.0.4183.121)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'SMITAPC', ip: '192.168.1.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\Smita\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53457}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1ed09ae60abe372e2106253f72f4cb29
+*** Element info: {Using=xpath, value=//*[@id="forename-err"]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.isSelected(Unknown Source)
+	at pages.actions.ContactPageActions.verifyErrorMessage(ContactPageActions.java:50)
+	at steps.TestCase1Steps.the_error_message_should_be_gone(TestCase1Steps.java:77)
+	at ✽.the error message should be gone(file:src/test/resources/features/TestCase1.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="Acceptance testing to validate the successful submission message" name="Validate if the Submission message is displayed as expected" time="17.997757">
+<system-out><![CDATA[Given I am on the HomePage as "https://jupiter.cloud.planittesting.com/#/"..passed
+And I click on the Contact page.............................................passed
+Then on the subsequent page I populate the mandatory fields.................passed
+And I click on the submit button............................................passed
+And so I will validate the submission message...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Acceptance testing to validate the errors on populating the mandatory fields with the invalid data" name="Validate if the Errors are displayed on giving invalid test data" time="13.458862">
+<system-out><![CDATA[Given I am logged on the HomePage as "https://jupiter.cloud.planittesting.com/#/".passed
+And I click on the Contact page menu in the HomePage........................passed
+Then on the subsequent page I populate the mandatory fields with invalid data.passed
+And so I will validate the errors displayed.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Acceptance testing to verify the items in the Cart after shopping for the same" name="Verify if all the selected items are present in the cart after choosing them from the Shop page" time="21.761199">
+<system-out><![CDATA[Given I am able to open the home page "https://jupiter.cloud.planittesting.com/#/".passed
+And I click on the Shop page menu in the HomePage...........................passed
+Then on the following page I click for two times on Funny Cow...............passed
+And I click on the Fluffy Bunny for one time................................passed
+Then I click on the cart menu...............................................passed
+And so I verify if the items are present on the cart........................passed
+]]></system-out>
+</testcase>
+</testsuite>

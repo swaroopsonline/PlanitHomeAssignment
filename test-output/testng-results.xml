@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="110895" started-at="2020-10-05T04:48:45Z" finished-at="2020-10-05T04:50:35Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@6025e1b6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="110895" started-at="2020-10-05T04:48:45Z" finished-at="2020-10-05T04:50:35Z">
+      <class name="runner.RunCuke">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunCuke@6025e1b6]" name="setUpClass" is-config="true" duration-ms="234" started-at="2020-10-05T04:48:45Z" finished-at="2020-10-05T04:48:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:runner.RunCuke@6025e1b6]" name="setup" is-config="true" duration-ms="150" started-at="2020-10-05T04:48:45Z" finished-at="2020-10-05T04:48:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@6025e1b6]" name="runScenario" duration-ms="56679" started-at="2020-10-05T04:48:45Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-05T04:49:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Errors on the Contact page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Acceptance testing to validate the errors on the Contact Page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="forename-err"]"}
+  (Session info: chrome=85.0.4183.121)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'SMITAPC', ip: '192.168.1.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\Smita\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53457}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1ed09ae60abe372e2106253f72f4cb29
+*** Element info: {Using=xpath, value=//*[@id="forename-err"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="forename-err"]"}
+  (Session info: chrome=85.0.4183.121)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'SMITAPC', ip: '192.168.1.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\Smita\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53457}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1ed09ae60abe372e2106253f72f4cb29
+*** Element info: {Using=xpath, value=//*[@id="forename-err"]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy20.isSelected(Unknown Source)
+at pages.actions.ContactPageActions.verifyErrorMessage(ContactPageActions.java:50)
+at steps.TestCase1Steps.the_error_message_should_be_gone(TestCase1Steps.java:77)
+at ✽.the error message should be gone(file:src/test/resources/features/TestCase1.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@6025e1b6]" name="runScenario" duration-ms="18013" started-at="2020-10-05T04:49:42Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-05T04:50:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if the Submission message is displayed as expected"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Acceptance testing to validate the successful submission message"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@6025e1b6]" name="runScenario" duration-ms="13464" started-at="2020-10-05T04:50:00Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-05T04:50:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if the Errors are displayed on giving invalid test data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Acceptance testing to validate the errors on populating the mandatory fields with the invalid data"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@6025e1b6]" name="runScenario" duration-ms="21774" started-at="2020-10-05T04:50:13Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-05T04:50:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify if all the selected items are present in the cart after choosing them from the Shop page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Acceptance testing to verify the items in the Cart after shopping for the same"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCuke@6025e1b6]" name="tearDownClass" is-config="true" duration-ms="465" started-at="2020-10-05T04:50:35Z" finished-at="2020-10-05T04:50:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.RunCuke -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
