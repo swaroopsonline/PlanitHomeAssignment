@@ -3,7 +3,7 @@ package pages.locators;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-
+/*This Class is a repository of the Locators for the Contact Page*/
 public class ContactPageLocators {
 	
 	@FindBy(how=How.XPATH, using ="//*[@id=\"forename\"]")
@@ -21,7 +21,7 @@ public class ContactPageLocators {
 	@FindBy(how=How.XPATH, using ="//*[@id=\"message\"]")
 	public WebElement Message;
 	
-	@FindBy(how=How.LINK_TEXT, using ="Submit")
+	@FindBy(how=How.LINK_TEXT, using ="Submit") // Here we've specifically made use of Link Text, rather than an Xpath.
 	public WebElement SubmitButton;
 	
 	
@@ -43,8 +43,6 @@ public class ContactPageLocators {
 	@FindBy(how=How.XPATH, using ="//*[@id=\"telephone-err\"]")
 	public WebElement invalidTelephoneNo;
 	
-	//@FindBy(how=How.XPATH, using ="//*[@id=\"header-message\"]/div")
-	//public WebElement invalidSubmissionMsg;
 	
 	
 	

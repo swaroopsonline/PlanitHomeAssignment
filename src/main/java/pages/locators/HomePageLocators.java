@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+/*This Class acts as a repository of the HomePage locator WebElements*/
 public class HomePageLocators {
 	
 	@FindBy(how=How.XPATH, using ="//*[@id=\"nav-shop\"]/a")
